@@ -17,9 +17,9 @@ gem 'uglifier', '>= 1.3.0'
 #Devise
 gem 'devise'
 
-# Use SCSS for stylesheets
-# Use Bootstrap
+# SCSS and Bootstrap services
 gem 'bootstrap-sass', '~> 3.3.6'
+gem 'bootstrap_form'
 gem 'sass-rails', '>= 3.2'
 
 #jQuerry
