@@ -14,6 +14,9 @@ gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
 
+#Devise
+gem 'devise'
+
 # Use SCSS for stylesheets
 # Use Bootstrap
 gem 'bootstrap-sass', '~> 3.3.6'
