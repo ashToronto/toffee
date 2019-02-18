@@ -1,3 +1,4 @@
+#Define test data
 FactoryGirl.define do
   factory :user do
     sequence(:name) { |n| "test#{n}" }
