@@ -6,5 +6,6 @@ class PagesController < ApplicationController
   # available across all our controllers.
 
   def index
+    @posts = Post.limit(5)
   end
 end
