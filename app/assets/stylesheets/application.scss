@@ -20,10 +20,11 @@
  // Variables
  @import "base/variables";
  // Default styles
-@import "base/default";
+ @import "base/default";
  // Partials - main css files
  @import "partials/*";
  @import "partials/layouts/*";
+ @import "partials/posts/*";
 
  // Media queries for a responsive design
 @import "responsive/*";
