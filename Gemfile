@@ -15,7 +15,7 @@ gem 'uglifier', '>= 1.3.0'
 # gem 'mini_racer', platforms: :ruby
 
 gem "pry"
-
+gem 'will_paginate', '~> 3.1.0'
 #Devise
 gem 'devise'
 
