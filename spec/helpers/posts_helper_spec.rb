@@ -34,18 +34,18 @@ RSpec.describe PostsHelper, :type => :helper do
     end
   end
 
-  context '#no_posts_partial_path' do
-    it "returns a no_posts partial's path" do
-      assign(:posts, [])
-      expect(helper.no_posts_partial_path).to (
-        eq 'posts/branch/no_posts'
+  context '#post_format_partial_path' do
+    it "returns a home_page partial's path" do
+      helper.stub(:current_page?).and_return(true)
+      expect(helper.post_format_partial_path).to (
+        eq 'posts/post/home_page'
       )
     end
 
-    it "returns an empty partial's path" do
-      assign(:posts, [1])
-      expect(helper.no_posts_partial_path).to (
-        eq 'shared/empty_partial'
+    it "returns a branch_page partial's path" do
+      helper.stub(:current_page?).and_return(false)
+      expect(helper.post_format_partial_path).to (
+        eq 'posts/post/branch_page'
       )
     end
   end
