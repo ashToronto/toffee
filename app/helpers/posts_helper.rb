@@ -28,7 +28,7 @@ module PostsHelper
   end
 
   def no_posts_partial_path(posts)
-    @posts.empty? ? 'posts/branch/no_posts' : 'shared/empty_partial'
+    posts.empty? ? 'posts/shared/no_posts' : 'shared/empty_partial'
   end
 
   def update_pagination_partial_path
